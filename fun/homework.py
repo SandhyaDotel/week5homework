@@ -3,7 +3,7 @@ def find_greatest_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the largest number in the list.
     """
-    if len(incoming_list) == 0 or incoming_list is None:
+    if incoming_list is None or len(incoming_list) == 0:
         return 0
     elif len(incoming_list) == 1:
         return incoming_list[0]
@@ -19,7 +19,7 @@ def find_least_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the smallest/least number in the list.
     """
-    if len(incoming_list) == 0 or incoming_list is None:
+    if incoming_list is None or len(incoming_list) == 0:
         return 0
     elif len(incoming_list) == 1:
         return incoming_list[0]
@@ -35,7 +35,7 @@ def add_list_numbers(incoming_list):
     Required parameter, incoming_list, should be a list.
     Add all the values together and return it.
     """
-    if len(incoming_list) == 0 or incoming_list is None:
+    if incoming_list is None or len(incoming_list) == 0:
         return 0
     total = 0
     for num in incoming_list:
@@ -50,8 +50,8 @@ def longest_value_key(incoming_dict):
     """
     longest_length = 0
     return_key = ""
-    if len(incoming_dict) == 0 or incoming_dict is None:
-        return "Empty Dict"
+    if incoming_dict is None or len(incoming_dict) == 0:
+        return None
     for key, val in incoming_dict.items():
         if len(val) > longest_length:
             longest_length = len(val)
