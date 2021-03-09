@@ -1,6 +1,3 @@
- """Homework file for my students to have fun with some algorithms! """
-
-
 def find_greatest_number(incoming_list):
     """
     Required parameter, incoming_list, should be a list.
